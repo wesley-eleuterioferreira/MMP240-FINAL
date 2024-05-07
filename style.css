@@ -1,0 +1,568 @@
+* {
+    box-sizing: border-box;
+    transition: all 100ms ease;
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+
+}
+
+body {
+    height: 100vh;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+#wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header h1 {
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: bold;
+}
+
+.find-program {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.search-programs p {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.nav-bar {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.top-nav a {
+    padding: 0.6em 1em;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.top-nav a:hover {
+    color: #0a3ae7;
+    border-left: #0a3ae7 solid 5px;
+    border-radius: 8px;
+    font-weight: 400;
+    display: block;
+
+}
+
+.top-nav a:last-child:hover {
+    background-color: #f38f02;
+    color: white;
+}
+
+.blue {
+    color: #0a3ae7;
+
+}
+
+.blue:hover {
+    text-shadow: 2px 5px 10px rgba(9, 13, 236, 0.2);
+    font-size: 1.1rem;
+
+}
+
+.input-div {
+    height: 40%;
+    width: 200px;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    border: 1px #0a3ae7 solid;
+    border-radius: 5px;
+}
+
+::placeholder {
+
+    text-decoration: none;
+    color: #0a3ae7;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 5px;
+
+}
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+        'FILL' 2,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+/* CSS for dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    width: 100%;
+
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    width: 100%;
+    border-radius: 10px;
+
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    padding: 1.2rem 2rem;
+    border-radius: 10px;
+    color: #0a3ae7;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.62);
+
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-left: #0a3ae7 solid 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1d48e3;
+}
+
+.dropdown:hover .dp2 {
+    background-color: #e3e31d;
+}
+
+.dropbtn {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #0a3ae7;
+    box-shadow: 3px 3px 5px 2px rgba(3, 15, 65, 0.256);
+    font-size: 1.2rem;
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-downs-box {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/*End*/
+.search-programs {
+    border: #1d48e3 2px solid;
+    height: 250px;
+
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+/*Hero Banner*/
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.hero-banner {
+    margin-top: 2rem;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+
+
+
+}
+
+.gradient {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 26, 255, 0.561));
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.hero-banner a {
+    color: #f38f02;
+}
+
+.hero-banner p {
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(42, 41, 41);
+    padding: 3rem;
+    color: #f38f02;
+}
+
+.apply {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #0a3ae7;
+    color: white;
+    font-weight: 400;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.apply:hover {
+    background-color: #f38f02;
+    border-left: 5px inset blue;
+    border-radius: 10px;
+
+}
+
+.layout {
+    height: 80vh;
+    border-left: #0a3ae7 solid 5px;
+    border-top-left-radius: 10px;
+    padding-left: 1rem;
+    margin: 2rem 0;
+    box-shadow: -5px 0px 5px 0px rgba(111, 110, 110, 0.493);
+
+}
+
+.layout h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 1.5rem 0 2rem 0;
+    color: #0a3ae7;
+}
+
+.layout h2 {
+
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.content {
+    padding: 1.5rem 0;
+    line-height: 1.2;
+    font-weight: 500;
+
+}
+
+.date {
+    padding: 0;
+}
+
+.spn {
+    display: block;
+    margin-top: 2rem;
+    color: #1d48e3;
+    text-decoration: underline;
+}
+
+.spn:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.layout {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.events {
+    flex: 1;
+}
+
+.news {
+    flex: 2;
+}
+
+.events p {
+    font-weight: 700;
+    margin-top: 2rem;
+
+}
+
+.events .date {
+    font-weight: 400;
+}
+
+a {
+    font-weight: 600;
+    color: blue;
+}
+
+/* MANHATTAN*/
+.card img {
+    width: 100%;
+    display: block;
+    height: 200px;
+}
+
+.cards {
+    display: grid;
+    gap: 3rem;
+    height: auto;
+    margin: 3rem 0;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    grid-template-rows: 600px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+
+}
+
+.cards>* {
+    flex: 1 1 200px;
+}
+
+footer {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0 0 2rem 0;
+
+
+}
+
+.card {
+    min-width: 18rem;
+    max-width: 20rem;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 154, 154);
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.559);
+    border: #0a3ae7 solid 2px;
+
+
+
+}
+
+.card .linq:hover {
+    color: #f38f02;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 2px 20px rgba(8, 73, 225, 0.559);
+    background-color: #0037ff;
+    color: white;
+    transition: all 100ms;
+}
+
+.card:hover .deg {
+    color: #f38f02;
+}
+
+.pgrm {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.deg {
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(14, 14, 216);
+    margin: 0 0 1rem;
+}
+
+.card h1 {
+    font-size: 1em;
+    border-bottom: solid 2px rgb(14, 14, 216);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.card-wrapper {
+    padding: 1rem;
+    line-height: 1.2;
+
+}
+
+.linq {
+    color: inherit;
+}
+
+.linq:hover {
+    color: blue;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+@media (max-width:1000px) {
+    .cards {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media (max-width:768px) {
+    .search-programs {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .cards {
+        grid-template-columns: auto;
+    }
+
+    .search-programs h1 {
+        text-align: center;
+    }
+
+    .drop-downs-box {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .input-div {
+        width: auto;
+        height: 60%;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #wrapper {
+        width: 95%;
+    }
+
+    .atcuny {
+        font-size: 2rem;
+    }
+
+    .hero-banner a {
+        font-size: 2rem;
+
+    }
+
+    .apply {
+        left: 68%;
+        height: 55px;
+        width: 200px;
+        bottom: 30px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .cards>* {
+        flex: 2 150px;
+    }
+}
