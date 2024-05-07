@@ -1,7 +1,17 @@
-let btn = document.querySelectorAll("#btn")
-let menu = document.querySelectorAll(".menu")
+const slider = document.querySelector('.slider');
+const slides = slider.querySelectorAll('li');
 
-btn.addEventListener("click",function(){
-    btn.innerContent = "block"
-})
+// Store the total number of images
+const slideCount = slides.length;
+let activeSlide = 0;
 
+// To change the images dynamically every 
+// 5 Secs, use SetInterval() method
+setInterval(() => {
+    slides[activeSlide].classList.remove('active');
+    activeSlide++
+    if (activeSlide === slideCount) {
+        activeSlide = 0;
+    }
+    slides[activeSlide].classList.add('active');
+}, 2000);
